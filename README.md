@@ -1,2 +1,2 @@
-# cosa-mangiamo
-Non sai cosa mangiare? Chiedilo al software.
+# Apricot
+Non sai cosa mangiare? Chiedilo ad Apricot.
