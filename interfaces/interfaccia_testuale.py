@@ -2,6 +2,7 @@ from classes.piatto import Piatto
 from classes.lista_piatti import ListaPiatti
 from classes.costanti import *
 
+
 def menu():
     print("Seleziona una funzione:")
     print("1. Piatto a caso data una base")
@@ -12,10 +13,12 @@ def menu():
     scelta = input("Scelta: ")
     return scelta
 
+
 def chiedi_ingredienti():
     ingredienti = input("Scrivi gli ingredienti separati da una virgola: ")
     lista_ingredienti = ingredienti.split(",")
     return lista_ingredienti
+
 
 def chiedi_portata():
     ok = False
@@ -25,6 +28,7 @@ def chiedi_portata():
             ok = True
     return portata
 
+
 def chiedi_base():
     ok = False
     while not ok:
@@ -32,6 +36,7 @@ def chiedi_base():
         if base in BASI:
             ok = True
     return base
+
 
 def print_risultato_ricerca(result):
     print()
