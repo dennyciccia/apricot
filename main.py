@@ -12,7 +12,7 @@ try:
 
         #lettura dei dati da file excel
         lista_piatti = ListaPiatti()
-        lista_piatti.read(nomefile)
+        lista_piatti.read_from_file(nomefile)
 
         function_number = -1
         while function_number != "0":
