@@ -5,12 +5,12 @@ class Piatto:
         if portata in PORTATE:
             self.__portata = portata
         else:
-            raise AttributeError("La portata non è un valore tra ['antipasto','primo','secondo','contorno','dolce']")
+            raise AttributeError(f"La portata non è un valore tra [{", ".join(PORTATE)}].")
 
         if base in BASI:
             self.__base = base
         else:
-            raise AttributeError("La base non è un valore tra ['carne','pesce','altro']")
+            raise AttributeError(f"La base non è un valore tra [{", ".join(BASI)}].")
         
         self.__nome = nome
         self.__ingredienti = ingredienti
