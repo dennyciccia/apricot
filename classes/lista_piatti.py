@@ -24,7 +24,7 @@ class ListaPiatti(list):
         df.columns = df.columns.str.replace(' ', '_')
 
         # esamino ogni riga del dataframe
-        for row in df.itertuples()[1:]:
+        for row in df.itertuples(index=False):
             ingredienti = row.ingredienti.split(",")
 
             if not isinstance(row.ricetta, numpy.float64) and not isinstance(row.ricetta, float):
@@ -66,7 +66,7 @@ class ListaPiatti(list):
 
         for piatto in self:
             if self.__piatto_idoneo(piatto,portata,base,ingredienti):
-                piatti_conformi.add(piatto)
+                piatti_conformi.append(piatto)
 
         return piatti_conformi
 
