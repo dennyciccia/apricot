@@ -2,17 +2,19 @@ import tkinter
 import tkinter as tk
 from tkinter import ttk
 from tkinter import filedialog as fd
-
 from classes.lista_piatti import ListaPiatti
 from classes.costanti import *
 
+
 def start_gui():
     main_window()
+
 
 def path_window():
     filetypes = [('Excel files', '*.xlsx')]
     filename = fd.askopenfilename(title='Scegli il file Excel', initialdir='.', filetypes=filetypes)
     return filename
+
 
 def main_window():
     window = tk.Tk()
